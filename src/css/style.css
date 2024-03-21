@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.app {
+  height: 70%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  border-radius: 10%;
+  box-shadow: 
+    inset -8px -8px 0 rgba(0, 96, 122, .08),
+    inset -12px -12px 12px rgba(0, 96, 122, .08),
+    inset -8px 12px 0 rgba(0, 96, 122, .2),
+    inset -6px 6px 2px rgba(0, 96, 122, .2),
+    -30px 30px 30px 0 rgba(155, 155, 155, 0.5);
+}
+
+.container {
+  height: 90%;
+  width: 90%;
+}
+
+#screen {
+  background: rgb(189, 224, 254);
+  display: flex;
+  justify-content: right;
+  margin-top: 2rem;
+  padding: .75rem 0;
+  border-radius: .625rem;
+}
+
+#screen-message {
+  display: flex;
+  margin-right: .75rem;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: .75rem;
+  justify-items: center;
+  align-items: center;
+  margin: 2rem .75rem 0 0;
+}
+
+button {
+  cursor: pointer;
+  height: 2.5rem;
+  width: 4rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(223, 223, 223);
+}
+
+button:hover {
+  outline: 1px solid rgb(148, 148, 148);
+  background-color: rgba(83, 83, 83, 0.342);
+}
+
+.developer-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50%;
+}
+
+.developer-message h2 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.developer-message a {
+  color: rgb(1, 68, 156)
+}
